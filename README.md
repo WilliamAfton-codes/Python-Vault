@@ -7,7 +7,7 @@ In Command Prompt or Terminal, type the following command:
 pip install cryptography
 ```
 
-Download `Python-Vault-x.x.zip` from releases
+Download `Python-Vault-x.x.zip` from [releases](https://github.com/WilliamAfton-codes/Python-Vault/releases/)
 
 Extract `encrypt.py` and `decrypt.py` and store them away from your precious file, in their own folder
 
