@@ -12,19 +12,18 @@ print(current_script)
 
 files = []
 
-directory = os.getcwd()
 
 key = input("Paste in your Base64 key (DO NOT INCLUDE b' '): ").encode()
 
-input("ALL FILES IN THIS DIRECTORY (except .py files) WILL BE DECRYPTED\nTHIS INCLUDES NON-ENCRYPTED FILES! \n\n[To proceed, press Enter]\n[To cancel, press Alt+F4 or close the program]")
+input("ALL FILES IN THE FOLDER 'VAULT' WILL BE DECRYPTED\nTHIS INCLUDES NON-ENCRYPTED FILES! \n\n[To proceed, press Enter]\n[To cancel, press Alt+F4 or close the program]")
 
 print("\nDecrypting files, please wait...\n")
 
 time.sleep(1)
 
+os.chdir("./VAULT")
+
 for file in os.listdir():
-    if file[-3:] == ".py":
-        continue
     if os.path.isfile(file):
         files.append(file)
 
